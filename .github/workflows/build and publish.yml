@@ -47,6 +47,6 @@ jobs:
                     restore-keys: |
                         ${{ runner.os }}-maven-
             - name: deploy to cloudhub 2.0
-              run : mvn -s settings.xml deploy -DmuleDeploy -Dmule.env=dev -Dmule.key=1234  -Danypoint.uri=https://anypoint.mulesoft.com -Dcloudhub.environment=Sandbox -Dcloudhub.provider=MC -Dcloudhub.target=Cloudhub-US-East-2 -Dreplicas=1 -DvCores=0.1 -Danypoint.platform.client_id=151a2021aa2842e9b0219a47a9b3af52 -Danypoint.platform.client_secret=9160e209d68943C190bfB2935DB160e3 -Dapplication.name=cloudhub2.0-github-action-prince -Dapp.runtime=4.4.0
+              run : mvn -s settings.xml deploy -DmuleDeploy -Dmule.env=dev -Dmule.key=1234  -Danypoint.uri=https://anypoint.mulesoft.com -Dcloudhub.environment=Sandbox -Dcloudhub.provider=MC -Dcloudhub.target=Cloudhub-US-East-2 -Dreplicas=1 -DvCores=0.1 -Danypoint.platform.client_id=151a2021aa2842e9b0219a47a9b3af52 -Danypoint.platform.client_secret=9160e209d68943C190bfB2935DB160e3 -Dapplication.name=github-action-prince -Dapp.runtime=4.4.0
 
 
