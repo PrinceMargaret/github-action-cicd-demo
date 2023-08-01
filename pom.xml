@@ -38,7 +38,7 @@
 						<environment>${cloudhub.environment}</environment>
 						<businessGroupId>${project.groupId}</businessGroupId>
 						<target>${cloudhub.target}</target>
-						<server>anypoint-exchange</server>
+						<server>anypoint-exchange-v3</server>
 						<replicas>${replicas}</replicas>
 						<vCores>${vCores}</vCores>
 						<applicationName>${application.name}</applicationName>
