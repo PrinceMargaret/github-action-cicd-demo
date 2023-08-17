@@ -1,15 +1,16 @@
-on:     
-    push:
-       branches: [dev]
-    pull_request:
-        branches: [master]
-jobs:
-    demo:
-        runs-on: ubuntu-latest
-        steps:
-            run: echo "firstword=hello"
 
+on: [push]    
+    #push:
+       #branches: [dev]
+    #pull_request:
+        #branches: [master]
+jobs: 
     cicd:
-        uses: PrinceMargaret/github-action/.github/workflows/workflow.yml@master
+        uses: PrinceMargaret/workflow-template/.github/workflows/workflow.yml@master
         with:
-            app_name: cicd_demo_ccc
+            appName: github-action-cicd-demo-1
+            appVersion: 1.0.${{ github.run_number }}
+           
+        secrets: inherit
+
+        
