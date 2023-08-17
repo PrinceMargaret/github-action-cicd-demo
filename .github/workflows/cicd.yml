@@ -8,7 +8,7 @@ jobs:
     cicd:
         uses: PrinceMargaret/workflow-template/.github/workflows/workflow.yml@master
         with:
-            appName: github-action-cicd-demo-1
+            appName: github-action-cicd-demo
             appVersion: 1.0.${{ github.run_number }}
            
         secrets: inherit
