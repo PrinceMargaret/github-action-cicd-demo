@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"msg": "github action in new repo with latest 17 Aug "
+	"msg": "github action demo with dev , test and prod environment "
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
